@@ -16,12 +16,6 @@ cask "caffeinator" do
 
   app "Caffeinator.app"
 
-  # The app is ad-hoc signed, not notarized. Clearing quarantine saves the "Open Anyway" trip.
-  # No declarative step does this, so it stays a postflight block (fine outside official taps).
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Caffeinator.app"]
-  end
-
   uninstall quit: "io.github.pranav435.caffeinator"
 
   zap trash: "~/Library/Preferences/io.github.pranav435.caffeinator.plist"
