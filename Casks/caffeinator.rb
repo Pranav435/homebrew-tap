@@ -4,7 +4,7 @@ cask "caffeinator" do
 
   url "https://github.com/Pranav435/caffeinator/releases/download/v#{version}/Caffeinator.zip"
   name "Caffeinator"
-  desc "Menu bar app that keeps the Mac awake"
+  desc "Menu bar app that keeps the computer awake"
   homepage "https://github.com/Pranav435/caffeinator"
 
   livecheck do
@@ -12,11 +12,12 @@ cask "caffeinator" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Caffeinator.app"
 
   # The app is ad-hoc signed, not notarized. Clearing quarantine saves the "Open Anyway" trip.
+  # No declarative step does this, so it stays a postflight block (fine outside official taps).
   postflight do
     system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Caffeinator.app"]
   end
