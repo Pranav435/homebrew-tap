@@ -1,8 +1,8 @@
 cask "stickersense" do
-  version "1.0.0"
-  sha256 "ac21fe8f1597b32e9cc17f1cf9ed782c383bdb0dc8745158dddce88b05dc3dea"
+  version "1.0.1"
+  sha256 "81930d325a9eef9370727a6c64db67dbc980c19dcbce61ff1ed86b6f2afd2074"
 
-  url "https://github.com/Pranav435/stickersense/releases/download/v#{version}/StickerSense.zip"
+  url "https://github.com/Pranav435/stickersense/releases/download/v#{version}/StickerSense-Mac.zip"
   name "StickerSense"
   desc "Describes chat stickers and GIFs out loud for screen reader users"
   homepage "https://github.com/Pranav435/stickersense"
