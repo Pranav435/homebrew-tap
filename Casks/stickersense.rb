@@ -1,6 +1,6 @@
 cask "stickersense" do
-  version "1.0.1"
-  sha256 "81930d325a9eef9370727a6c64db67dbc980c19dcbce61ff1ed86b6f2afd2074"
+  version "1.1.0"
+  sha256 "aff97a1935265774a10d23ca6f45a5ce98d620ca2235b8d4e033c34f7c7c446d"
 
   url "https://github.com/Pranav435/stickersense/releases/download/v#{version}/StickerSense-Mac.zip"
   name "StickerSense"
