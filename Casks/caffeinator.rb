@@ -1,6 +1,6 @@
 cask "caffeinator" do
-  version "1.1.0"
-  sha256 "8a853ac20faf4bf442615a1f06d0858ad92c434c0ef15b1f4cbadcdc6b327bc2"
+  version "1.2.0"
+  sha256 "b696268a1a696b9dbff8d9ec4c54935eb44f31b0a0903f9f87da673743aa9fdc"
 
   url "https://github.com/Pranav435/caffeinator/releases/download/v#{version}/Caffeinator.zip"
   name "Caffeinator"
